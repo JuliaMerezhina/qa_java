@@ -4,10 +4,9 @@ import java.util.List;
 
 public class LionAlex extends Lion {
 
-    private static final String sex = "Самец";
 
     public LionAlex() throws Exception {
-        super(LionAlex.sex);
+        super("Самец");
     }
 
     @Override
