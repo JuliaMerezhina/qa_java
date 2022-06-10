@@ -2,9 +2,14 @@ package com.example;
 
 import java.util.List;
 
-public class Lion extends Feline {
+public class Lion {
 
     boolean hasMane;
+    private Feline feline;
+
+    public Lion(Feline feline) {
+        this.feline = feline;
+    }
 
     public Lion(String sex) throws Exception {
         if ("Самец".equals(sex)) {
@@ -17,7 +22,7 @@ public class Lion extends Feline {
     }
 
     public int getKittens() {
-        return super.getKittens();
+        return feline.getKittens();
     }
 
     public boolean doesHaveMane() {
@@ -25,6 +30,6 @@ public class Lion extends Feline {
     }
 
     public List<String> getFood() throws Exception {
-        return getFood("Хищник");
+        return feline.getFood("Хищник");
     }
 }

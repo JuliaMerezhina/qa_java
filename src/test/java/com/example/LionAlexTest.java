@@ -1,5 +1,6 @@
 package com.example;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
@@ -8,10 +9,14 @@ import static org.junit.Assert.assertEquals;
 
 public class LionAlexTest {
 
-    private String sex;
-    LionAlex lionAlex = new LionAlex();
+    private LionAlex lionAlex;
 
-    public LionAlexTest() throws Exception {
+    @Before
+    public void prepare() throws Exception {
+        lionAlex = new LionAlex();
+    }
+
+    public LionAlexTest() {
     }
 
     @Test

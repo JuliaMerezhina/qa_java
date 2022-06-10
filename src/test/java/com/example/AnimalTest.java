@@ -22,7 +22,7 @@ public class AnimalTest {
     }
 
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index}: {0} , {1}")
     public static Object[] getResult() {
         return new Object[][]{
                 {"Травоядное", List.of("Трава", "Различные растения")},

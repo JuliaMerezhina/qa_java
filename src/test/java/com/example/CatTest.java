@@ -11,21 +11,16 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
-
     @Mock
-    private Cat cat;
-
+    Feline feline;
 
     @Test
-    public void CheckGetSound() {
+    public void checkGetSound() {
         String kittySound = "Мяу";
         Feline feline = new Feline();
         Cat cat = new Cat(feline);
         assertEquals(kittySound, cat.getSound());
     }
-
-    @Mock
-    private Predator predator;
 
 
     @Test
